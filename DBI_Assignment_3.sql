@@ -1,5 +1,8 @@
 USE [master]
 GO
+DROP DATABASE IF EXISTS DBI_ASSIGNMENT;
+GO
+
 /****** Object:  Database [DBI_ASSIGNMENT]    Script Date: 01-Nov-23 7:44:13 AM ******/
 CREATE DATABASE [DBI_ASSIGNMENT]
 GO
