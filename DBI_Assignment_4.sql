@@ -269,99 +269,99 @@ CREATE TABLE [dbo].[Salary](
 GO
 SET IDENTITY_INSERT [dbo].[Attendance] ON 
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (1, CAST(N'2018-01-01' AS Date), 27, 3, 9, 20, 5)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (1, CAST(N'2018-01-01' AS Date), 22, 3, 9, 20, 5)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (2, CAST(N'2018-03-01' AS Date), 21, 7, 10, 20, 5)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (3, CAST(N'2018-02-01' AS Date), 17, 9, 6, 20, 5)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (3, CAST(N'2018-02-01' AS Date), 27, 9, 6, 20, 5)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (4, CAST(N'2018-04-01' AS Date), 30, 2, 5, 20, 5)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (4, CAST(N'2018-04-01' AS Date), 21, 2, 5, 20, 5)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (5, CAST(N'2018-03-01' AS Date), 16, 6, 1, 20, 10)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (5, CAST(N'2018-03-01' AS Date), 26, 6, 1, 20, 10)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (6, CAST(N'2018-02-01' AS Date), 19, 2, 1, 20, 10)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (6, CAST(N'2018-02-01' AS Date), 25, 2, 1, 20, 10)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (7, CAST(N'2018-01-01' AS Date), 27, 3, 7, 20, 10)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (7, CAST(N'2018-01-01' AS Date), 21, 3, 7, 20, 10)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (8, CAST(N'2018-04-01' AS Date), 22, 10, 5, 20, 10)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (8, CAST(N'2018-04-01' AS Date), 27, 10, 5, 20, 10)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (9, CAST(N'2018-01-01' AS Date), 18, 4, 5, 20, 8)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (9, CAST(N'2018-01-01' AS Date), 28, 4, 5, 20, 8)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (10, CAST(N'2018-03-01' AS Date), 15, 4, 8, 20, 8)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (10, CAST(N'2018-03-01' AS Date), 25, 4, 8, 20, 8)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (11, CAST(N'2018-02-01' AS Date), 27, 6, 3, 20, 8)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (11, CAST(N'2018-02-01' AS Date), 20, 6, 3, 20, 8)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (12, CAST(N'2018-04-01' AS Date), 15, 9, 6, 20, 8)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (12, CAST(N'2018-04-01' AS Date), 25, 9, 6, 20, 8)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (13, CAST(N'2018-02-01' AS Date), 15, 7, 4, 20, 7)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (13, CAST(N'2018-02-01' AS Date), 25, 7, 4, 20, 7)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (14, CAST(N'2018-04-01' AS Date), 23, 1, 6, 20, 7)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (15, CAST(N'2018-01-01' AS Date), 21, 1, 8, 20, 7)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (16, CAST(N'2018-03-01' AS Date), 19, 10, 6, 20, 7)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (16, CAST(N'2018-03-01' AS Date), 25, 10, 6, 20, 7)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (17, CAST(N'2018-02-01' AS Date), 26, 2, 6, 20, 13)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (18, CAST(N'2018-03-01' AS Date), 18, 9, 5, 20, 13)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (18, CAST(N'2018-03-01' AS Date), 28, 9, 5, 20, 13)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (19, CAST(N'2018-04-01' AS Date), 26, 8, 8, 20, 13)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (19, CAST(N'2018-04-01' AS Date), 25, 8, 8, 20, 13)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (20, CAST(N'2018-01-01' AS Date), 16, 5, 9, 20, 13)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (20, CAST(N'2018-01-01' AS Date), 26, 5, 9, 20, 13)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (21, CAST(N'2018-04-01' AS Date), 16, 3, 4, 20, 2)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (21, CAST(N'2018-04-01' AS Date), 26, 3, 4, 20, 2)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (22, CAST(N'2018-01-01' AS Date), 20, 6, 9, 20, 2)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (23, CAST(N'2018-03-01' AS Date), 20, 5, 7, 20, 2)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (24, CAST(N'2018-02-01' AS Date), 26, 1, 5, 20, 2)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (24, CAST(N'2018-02-01' AS Date), 22, 1, 5, 20, 2)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (25, CAST(N'2018-02-01' AS Date), 29, 10, 1, 20, 1)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (25, CAST(N'2018-02-01' AS Date), 25, 10, 1, 20, 1)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (26, CAST(N'2018-01-01' AS Date), 28, 5, 1, 20, 1)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (26, CAST(N'2018-01-01' AS Date), 23, 5, 1, 20, 1)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (27, CAST(N'2018-04-01' AS Date), 25, 6, 4, 20, 1)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (27, CAST(N'2018-04-01' AS Date), 28, 6, 4, 20, 1)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (28, CAST(N'2018-03-01' AS Date), 29, 6, 2, 20, 1)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (28, CAST(N'2018-03-01' AS Date), 21, 6, 2, 20, 1)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (29, CAST(N'2018-04-01' AS Date), 16, 4, 7, 20, 9)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (29, CAST(N'2018-04-01' AS Date), 26, 4, 7, 20, 9)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (30, CAST(N'2018-02-01' AS Date), 26, 5, 4, 20, 9)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (30, CAST(N'2018-02-01' AS Date), 24, 5, 4, 20, 9)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (31, CAST(N'2018-03-01' AS Date), 29, 3, 7, 20, 9)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (31, CAST(N'2018-03-01' AS Date), 22, 3, 7, 20, 9)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (32, CAST(N'2018-01-01' AS Date), 30, 3, 6, 20, 9)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (32, CAST(N'2018-01-01' AS Date), 24, 3, 6, 20, 9)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (33, CAST(N'2018-03-01' AS Date), 16, 6, 10, 20, 14)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (33, CAST(N'2018-03-01' AS Date), 26, 6, 10, 20, 14)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (34, CAST(N'2018-01-01' AS Date), 15, 1, 1, 20, 14)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (34, CAST(N'2018-01-01' AS Date), 25, 1, 1, 20, 14)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (35, CAST(N'2018-04-01' AS Date), 20, 7, 1, 20, 14)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (36, CAST(N'2018-02-01' AS Date), 28, 9, 10, 20, 14)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (36, CAST(N'2018-02-01' AS Date), 27, 9, 10, 20, 14)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (37, CAST(N'2018-04-01' AS Date), 25, 6, 4, 20, 11)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (37, CAST(N'2018-04-01' AS Date), 26, 6, 4, 20, 11)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (38, CAST(N'2018-01-01' AS Date), 26, 5, 2, 20, 11)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (38, CAST(N'2018-01-01' AS Date), 25, 5, 2, 20, 11)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (39, CAST(N'2018-03-01' AS Date), 25, 9, 1, 20, 11)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (39, CAST(N'2018-03-01' AS Date), 27, 9, 1, 20, 11)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (40, CAST(N'2018-02-01' AS Date), 16, 7, 3, 20, 11)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (40, CAST(N'2018-02-01' AS Date), 26, 7, 3, 20, 11)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (41, CAST(N'2018-02-01' AS Date), 15, 9, 6, 20, 3)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (41, CAST(N'2018-02-01' AS Date), 25, 9, 6, 20, 3)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (42, CAST(N'2018-04-01' AS Date), 19, 6, 9, 20, 3)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (42, CAST(N'2018-04-01' AS Date), 25, 6, 9, 20, 3)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (43, CAST(N'2018-03-01' AS Date), 19, 9, 5, 20, 3)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (43, CAST(N'2018-03-01' AS Date), 27, 9, 5, 20, 3)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (44, CAST(N'2018-01-01' AS Date), 22, 7, 8, 20, 3)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (45, CAST(N'2018-02-01' AS Date), 30, 5, 1, 20, 15)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (45, CAST(N'2018-02-01' AS Date), 28, 5, 1, 20, 15)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (46, CAST(N'2018-03-01' AS Date), 23, 5, 4, 20, 15)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (47, CAST(N'2018-04-01' AS Date), 15, 4, 7, 20, 15)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (47, CAST(N'2018-04-01' AS Date), 25, 4, 7, 20, 15)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (48, CAST(N'2018-01-01' AS Date), 22, 6, 6, 20, 15)
 GO
@@ -369,63 +369,63 @@ INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [At
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (50, CAST(N'2018-02-01' AS Date), 22, 7, 8, 20, 17)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (51, CAST(N'2018-03-01' AS Date), 25, 8, 9, 20, 17)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (51, CAST(N'2018-03-01' AS Date), 24, 8, 9, 20, 17)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (52, CAST(N'2018-04-01' AS Date), 24, 1, 6, 20, 17)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (53, CAST(N'2018-02-01' AS Date), 16, 9, 6, 20, 12)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (53, CAST(N'2018-02-01' AS Date), 26, 9, 6, 20, 12)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (54, CAST(N'2018-03-01' AS Date), 29, 1, 4, 20, 12)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (54, CAST(N'2018-03-01' AS Date), 27, 1, 4, 20, 12)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (55, CAST(N'2018-04-01' AS Date), 24, 8, 10, 20, 12)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (56, CAST(N'2018-01-01' AS Date), 21, 8, 10, 20, 12)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (57, CAST(N'2018-04-01' AS Date), 16, 2, 4, 20, 6)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (57, CAST(N'2018-04-01' AS Date), 22, 2, 4, 20, 6)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (58, CAST(N'2018-01-01' AS Date), 21, 8, 2, 20, 6)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (59, CAST(N'2018-02-01' AS Date), 16, 3, 4, 20, 6)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (59, CAST(N'2018-02-01' AS Date), 25, 3, 4, 20, 6)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (60, CAST(N'2018-03-01' AS Date), 19, 2, 10, 20, 6)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (60, CAST(N'2018-03-01' AS Date), 25, 2, 10, 20, 6)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (61, CAST(N'2018-04-01' AS Date), 25, 7, 7, 20, 19)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (61, CAST(N'2018-04-01' AS Date), 22, 7, 7, 20, 19)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (62, CAST(N'2018-03-01' AS Date), 29, 8, 6, 20, 19)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (62, CAST(N'2018-03-01' AS Date), 24, 8, 6, 20, 19)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (63, CAST(N'2018-02-01' AS Date), 20, 6, 8, 20, 19)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (64, CAST(N'2018-01-01' AS Date), 23, 9, 2, 20, 19)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (65, CAST(N'2018-01-01' AS Date), 16, 1, 1, 20, 18)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (65, CAST(N'2018-01-01' AS Date), 26, 1, 1, 20, 18)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (66, CAST(N'2018-02-01' AS Date), 27, 3, 8, 20, 18)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (67, CAST(N'2018-03-01' AS Date), 29, 4, 7, 20, 18)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (67, CAST(N'2018-03-01' AS Date), 26, 4, 7, 20, 18)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (68, CAST(N'2018-04-01' AS Date), 30, 7, 3, 20, 18)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (68, CAST(N'2018-04-01' AS Date), 20, 7, 3, 20, 18)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (69, CAST(N'2018-04-01' AS Date), 17, 4, 6, 20, 4)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (69, CAST(N'2018-04-01' AS Date), 27, 4, 6, 20, 4)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (70, CAST(N'2018-03-01' AS Date), 23, 2, 9, 20, 4)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (71, CAST(N'2018-02-01' AS Date), 24, 4, 2, 20, 4)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (72, CAST(N'2018-01-01' AS Date), 30, 7, 5, 20, 4)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (72, CAST(N'2018-01-01' AS Date), 20, 7, 5, 20, 4)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (73, CAST(N'2018-01-01' AS Date), 23, 10, 5, 20, 20)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (74, CAST(N'2018-02-01' AS Date), 25, 1, 6, 20, 20)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (75, CAST(N'2018-03-01' AS Date), 15, 7, 3, 20, 20)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (75, CAST(N'2018-03-01' AS Date), 25, 7, 3, 20, 20)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (76, CAST(N'2018-04-01' AS Date), 27, 7, 6, 20, 20)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (77, CAST(N'2018-02-01' AS Date), 16, 8, 5, 20, 16)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (77, CAST(N'2018-02-01' AS Date), 26, 8, 5, 20, 16)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (78, CAST(N'2018-04-01' AS Date), 28, 9, 10, 20, 16)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (78, CAST(N'2018-04-01' AS Date), 20, 9, 10, 20, 16)
 GO
-INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (79, CAST(N'2018-03-01' AS Date), 27, 6, 5, 20, 16)
+INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (79, CAST(N'2018-03-01' AS Date), 22, 6, 5, 20, 16)
 GO
 INSERT [dbo].[Attendance] ([AttID], [AttReceiveDate], [AttDay], [AttAbsent], [AttOvertime], [BonusBasic], [EmpID]) VALUES (80, CAST(N'2018-01-01' AS Date), 20, 6, 8, 20, 16)
 GO
@@ -433,89 +433,39 @@ SET IDENTITY_INSERT [dbo].[Attendance] OFF
 GO
 SET IDENTITY_INSERT [dbo].[CarryOut] ON 
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (1, 3, 7, CAST(N'2016-10-08' AS Date), CAST(N'2021-04-05' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (1, 3, 1, CAST(N'2016-10-08' AS Date), CAST(N'2021-04-05' AS Date))
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (2, 13, 10, CAST(N'2016-06-22' AS Date), CAST(N'2020-12-18' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (2, 1, 10, CAST(N'2016-06-22' AS Date), CAST(N'2020-12-18' AS Date))
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (3, 9, 7, CAST(N'2017-11-20' AS Date), CAST(N'2022-05-18' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (3, 4, 7, CAST(N'2017-11-20' AS Date), CAST(N'2022-05-18' AS Date))
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (4, 6, 4, CAST(N'2018-04-17' AS Date), CAST(N'2022-10-13' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (4, 5, 4, CAST(N'2018-04-17' AS Date), CAST(N'2022-10-13' AS Date))
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (5, 20, 2, CAST(N'2018-08-24' AS Date), CAST(N'2023-02-19' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (5, 2, 2, CAST(N'2018-08-24' AS Date), CAST(N'2023-02-19' AS Date))
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (6, 23, 4, CAST(N'2016-02-26' AS Date), CAST(N'2020-08-23' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (6, 2, 9, CAST(N'2016-02-26' AS Date), CAST(N'2020-08-23' AS Date))
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (7, 16, 8, CAST(N'2016-03-07' AS Date), CAST(N'2020-09-02' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (7, 1, 3, CAST(N'2016-03-07' AS Date), CAST(N'2020-09-02' AS Date))
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (8, 14, 5, CAST(N'2018-01-06' AS Date), CAST(N'2022-07-04' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (8, 4, 5, CAST(N'2018-01-06' AS Date), CAST(N'2022-07-04' AS Date))
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (9, 1, 8, CAST(N'2016-02-07' AS Date), CAST(N'2020-08-04' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (9, 5, 8, CAST(N'2016-02-07' AS Date), CAST(N'2020-08-04' AS Date))
 GO
-INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (10, 11, 2, CAST(N'2018-12-11' AS Date), CAST(N'2023-06-08' AS Date))
+INSERT [dbo].[CarryOut] ([CarryID], [CityID], [ProjectID], [ProStartDate], [ProEndDate]) VALUES (10, 3, 6, CAST(N'2018-12-11' AS Date), CAST(N'2023-06-08' AS Date))
 GO
 SET IDENTITY_INSERT [dbo].[CarryOut] OFF
 GO
 SET IDENTITY_INSERT [dbo].[City] ON 
 GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (8, N'Anchorage')
+INSERT [dbo].[City] ([CityID], [CityName]) VALUES (1, N'Anchorage')
 GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (18, N'Aurora')
+INSERT [dbo].[City] ([CityID], [CityName]) VALUES (2, N'Aurora')
 GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (17, N'Baton Rouge')
+INSERT [dbo].[City] ([CityID], [CityName]) VALUES (3, N'Baton Rouge')
 GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (29, N'Birmingham')
+INSERT [dbo].[City] ([CityID], [CityName]) VALUES (4, N'Birmingham')
 GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (30, N'Corpus Christi')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (20, N'Detroit')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (11, N'Fort Worth')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (24, N'Houston')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (2, N'Jacksonville')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (12, N'Las Vegas')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (28, N'Los Angeles')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (14, N'Lubbock')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (15, N'Memphis')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (5, N'Milwaukee')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (23, N'Montgomery')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (6, N'New Orleans')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (27, N'Newark')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (19, N'Oakland')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (21, N'Omaha')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (4, N'Philadelphia')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (10, N'Richmond')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (3, N'San Antonio')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (9, N'San Diego')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (26, N'San Jose')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (13, N'Seattle')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (25, N'Spokane')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (22, N'St. Paul')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (16, N'Stockton')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (7, N'Tulsa')
-GO
-INSERT [dbo].[City] ([CityID], [CityName]) VALUES (1, N'Virginia Beach')
+INSERT [dbo].[City] ([CityID], [CityName]) VALUES (5, N'Detroit')
 GO
 SET IDENTITY_INSERT [dbo].[City] OFF
 GO
@@ -523,13 +473,13 @@ SET IDENTITY_INSERT [dbo].[Department] ON
 GO
 INSERT [dbo].[Department] ([DeptID], [DeptName], [DeptPhone], [ManagerID], [CityID]) VALUES (1, N'Accounting', N'5996530385', 12, 3)
 GO
-INSERT [dbo].[Department] ([DeptID], [DeptName], [DeptPhone], [ManagerID], [CityID]) VALUES (2, N'TechnicalSales', N'5731871168', 14, 13)
+INSERT [dbo].[Department] ([DeptID], [DeptName], [DeptPhone], [ManagerID], [CityID]) VALUES (2, N'TechnicalSales', N'5731871168', 14, 1)
 GO
-INSERT [dbo].[Department] ([DeptID], [DeptName], [DeptPhone], [ManagerID], [CityID]) VALUES (3, N'AccessorySales', N'5793798139', 10, 26)
+INSERT [dbo].[Department] ([DeptID], [DeptName], [DeptPhone], [ManagerID], [CityID]) VALUES (3, N'AccessorySales', N'5793798139', 10, 2)
 GO
-INSERT [dbo].[Department] ([DeptID], [DeptName], [DeptPhone], [ManagerID], [CityID]) VALUES (4, N'BusinessSales', N'8211527011', 18, 27)
+INSERT [dbo].[Department] ([DeptID], [DeptName], [DeptPhone], [ManagerID], [CityID]) VALUES (4, N'BusinessSales', N'8211527011', 18, 5)
 GO
-INSERT [dbo].[Department] ([DeptID], [DeptName], [DeptPhone], [ManagerID], [CityID]) VALUES (5, N'Service', N'6897711618', 11, 11)
+INSERT [dbo].[Department] ([DeptID], [DeptName], [DeptPhone], [ManagerID], [CityID]) VALUES (5, N'Service', N'6897711618', 11, 4)
 GO
 SET IDENTITY_INSERT [dbo].[Department] OFF
 GO
@@ -707,65 +657,35 @@ SET IDENTITY_INSERT [dbo].[Insurance] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Participate] ON 
 GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (1, 4, 7, CAST(N'2016-02-11' AS Date), CAST(N'2020-08-08' AS Date))
+INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (1, 1, 9, CAST(N'2016-02-11' AS Date), CAST(N'2020-08-08' AS Date))
 GO
 INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (2, 1, 10, CAST(N'2018-10-07' AS Date), CAST(N'2023-04-04' AS Date))
 GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (3, 1, 7, CAST(N'2016-08-19' AS Date), CAST(N'2021-02-14' AS Date))
+INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (3, 3, 7, CAST(N'2016-08-19' AS Date), CAST(N'2021-02-14' AS Date))
 GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (4, 1, 4, CAST(N'2016-06-21' AS Date), CAST(N'2020-12-17' AS Date))
+INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (4, 5, 4, CAST(N'2016-06-21' AS Date), CAST(N'2020-12-17' AS Date))
 GO
 INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (5, 3, 2, CAST(N'2018-06-07' AS Date), CAST(N'2022-12-03' AS Date))
 GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (6, 1, 4, CAST(N'2016-11-02' AS Date), CAST(N'2021-04-30' AS Date))
+INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (6, 2, 4, CAST(N'2016-11-02' AS Date), CAST(N'2021-04-30' AS Date))
 GO
 INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (7, 1, 8, CAST(N'2018-10-05' AS Date), CAST(N'2023-04-02' AS Date))
 GO
 INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (8, 2, 5, CAST(N'2016-01-24' AS Date), CAST(N'2020-07-21' AS Date))
 GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (9, 4, 8, CAST(N'2016-06-13' AS Date), CAST(N'2020-12-09' AS Date))
+INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (9, 4, 3, CAST(N'2016-06-13' AS Date), CAST(N'2020-12-09' AS Date))
 GO
 INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (10, 3, 2, CAST(N'2017-10-06' AS Date), CAST(N'2022-04-03' AS Date))
 GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (11, 4, 2, CAST(N'2017-02-27' AS Date), CAST(N'2021-08-25' AS Date))
+INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (11, 4, 4, CAST(N'2017-02-27' AS Date), CAST(N'2021-08-25' AS Date))
 GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (12, 2, 5, CAST(N'2018-11-29' AS Date), CAST(N'2023-05-27' AS Date))
+INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (12, 3, 5, CAST(N'2018-11-29' AS Date), CAST(N'2023-05-27' AS Date))
 GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (13, 1, 6, CAST(N'2017-01-12' AS Date), CAST(N'2021-07-10' AS Date))
+INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (13, 5, 6, CAST(N'2017-01-12' AS Date), CAST(N'2021-07-10' AS Date))
 GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (14, 5, 5, CAST(N'2016-08-29' AS Date), CAST(N'2021-02-24' AS Date))
+INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (14, 5, 1, CAST(N'2016-08-29' AS Date), CAST(N'2021-02-24' AS Date))
 GO
 INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (15, 2, 8, CAST(N'2017-06-10' AS Date), CAST(N'2021-12-06' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (16, 1, 3, CAST(N'2017-05-29' AS Date), CAST(N'2021-11-24' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (17, 4, 10, CAST(N'2016-10-08' AS Date), CAST(N'2021-04-05' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (18, 5, 8, CAST(N'2016-01-12' AS Date), CAST(N'2020-07-09' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (19, 3, 6, CAST(N'2018-05-25' AS Date), CAST(N'2022-11-20' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (20, 4, 1, CAST(N'2018-11-19' AS Date), CAST(N'2023-05-17' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (21, 5, 10, CAST(N'2017-11-23' AS Date), CAST(N'2022-05-21' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (22, 3, 10, CAST(N'2016-06-21' AS Date), CAST(N'2020-12-17' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (23, 5, 8, CAST(N'2018-10-12' AS Date), CAST(N'2023-04-09' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (24, 1, 3, CAST(N'2016-07-29' AS Date), CAST(N'2021-01-24' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (25, 3, 6, CAST(N'2017-06-30' AS Date), CAST(N'2021-12-26' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (26, 5, 4, CAST(N'2018-05-17' AS Date), CAST(N'2022-11-12' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (27, 1, 8, CAST(N'2016-12-04' AS Date), CAST(N'2021-06-01' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (28, 4, 6, CAST(N'2018-09-09' AS Date), CAST(N'2023-03-07' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (29, 5, 4, CAST(N'2016-10-23' AS Date), CAST(N'2021-04-20' AS Date))
-GO
-INSERT [dbo].[Participate] ([PartID], [DeptID], [ProjectID], [PartStartDate], [PartEndDate]) VALUES (30, 5, 3, CAST(N'2016-12-10' AS Date), CAST(N'2021-06-07' AS Date))
 GO
 SET IDENTITY_INSERT [dbo].[Participate] OFF
 GO
@@ -797,25 +717,25 @@ SET IDENTITY_INSERT [dbo].[Position] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Project] ON 
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (1, N'Corporate Sales', 448361.57074121828)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (1, N'Corporate Sales', 450000)
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (2, N'Corporate Marketing', 554640.88171470945)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (2, N'Corporate Marketing', 550000)
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (3, N'Business Marketing', 48925.72263205691)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (3, N'Business Marketing', 50000)
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (4, N'National Customer', 84344.374790948059)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (4, N'National Customer', 90000)
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (5, N'International Marketing', 11566.488813407015)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (5, N'International Marketing', 20000)
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (6, N'National Marketing', 157378.12666100363)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (6, N'National Marketing', 150000)
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (7, N'Technical', 101738.78189257289)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (7, N'Technical', 100000)
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (8, N'Web', 969312.9910246064)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (8, N'Web', 900000)
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (9, N'Consumer Customer', 404113.2282810813)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (9, N'Consumer Customer', 400000)
 GO
-INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (10, N'Technical Sales', 427109.29857432342)
+INSERT [dbo].[Project] ([ProjectID], [ProjectName], [Budget]) VALUES (10, N'Technical Sales', 420000)
 GO
 SET IDENTITY_INSERT [dbo].[Project] OFF
 GO
@@ -1128,7 +1048,7 @@ ALTER TABLE [dbo].[Salary] CHECK CONSTRAINT [FK_Salary_Project]
 GO
 ALTER TABLE [dbo].[Attendance]  WITH CHECK ADD CHECK  (([AttAbsent]>=(1) AND [AttAbsent]<=(10)))
 GO
-ALTER TABLE [dbo].[Attendance]  WITH CHECK ADD CHECK  (([AttDay]>=(15) AND [AttDay]<=(30)))
+ALTER TABLE [dbo].[Attendance]  WITH CHECK ADD CHECK  (([AttDay]>=(20) AND [AttDay]<=(28)))
 GO
 ALTER TABLE [dbo].[Attendance]  WITH CHECK ADD CHECK  (([AttOvertime]>=(1) AND [AttOvertime]<=(10)))
 GO
