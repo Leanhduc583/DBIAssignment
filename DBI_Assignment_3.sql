@@ -1,9 +1,8 @@
+drop database if exists [DBI_ASSIGNMENT]
+go
 USE [master]
 GO
-DROP DATABASE IF EXISTS DBI_ASSIGNMENT;
-GO
-
-/****** Object:  Database [DBI_ASSIGNMENT]    Script Date: 01-Nov-23 7:44:13 AM ******/
+/****** Object:  Database [DBI_ASSIGNMENT]    Script Date: 01-Nov-23 9:52:59 AM ******/
 CREATE DATABASE [DBI_ASSIGNMENT]
 GO
 ALTER DATABASE [DBI_ASSIGNMENT] SET COMPATIBILITY_LEVEL = 160
@@ -79,42 +78,49 @@ ALTER DATABASE [DBI_ASSIGNMENT] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CL
 GO
 USE [DBI_ASSIGNMENT]
 GO
-/****** Object:  Table [dbo].[Attendance]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[Attendance]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Attendance](
-	[AttReceiveDate] [date] NOT NULL,
-	[AttDayAttend] [int] NOT NULL,
-	[AttAbsent] [int] NOT NULL,
-	[AttOvertime] [int] NOT NULL,
+	[AttID] [int] IDENTITY(1,1) NOT NULL,
+	[AttReceiveDate] [date] NULL check (day(AttReceiveDate) = 1),
+	[AttDay] [int] NOT NULL check (AttDay between 1 and 30),
+	[AttAbsent] [int] NOT NULL check (AttAbsent between 1 and 30),
+	[AttOvertime] [int] check (AttOvertime between 1 and 10) NOT NULL,
+	[BonusBasic] [float] default '20' NOT NULL,
 	[EmpID] [int] NOT NULL,
- CONSTRAINT [PK_Attendance] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_Attendance_1] PRIMARY KEY CLUSTERED 
 (
-	[EmpID] ASC
+	[AttID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CarryOut]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[CarryOut]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[CarryOut](
+	[CarryID] [int] IDENTITY(1,1) NOT NULL,
 	[CityID] [int] NOT NULL,
 	[ProjectID] [int] NOT NULL,
 	[ProStartDate] [date] NOT NULL,
-	[ProEndDate] [date] NOT NULL
+	[ProEndDate] [date] check (datediff(month,proenddate,prostartdate)>=3) NOT NULL,
+ CONSTRAINT [PK_CarryOut] PRIMARY KEY CLUSTERED 
+(
+	[CarryID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[City]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[City]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[City](
-	[CityID] [int] NOT NULL,
+	[CityID] [int] IDENTITY(1,1) NOT NULL,
 	[CityName] [nvarchar](50) NOT NULL,
  CONSTRAINT [PK_City] PRIMARY KEY CLUSTERED 
 (
@@ -122,15 +128,15 @@ CREATE TABLE [dbo].[City](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Department]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[Department]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Department](
-	[DeptID] [int] NOT NULL,
+	[DeptID] [int] IDENTITY(1,1) NOT NULL,
 	[DeptName] [nvarchar](50) NOT NULL,
-	[DepPhone] [int] NOT NULL,
+	[DeptPhone] [char](10) unique NOT NULL,
 	[ManagerID] [int] NOT NULL,
 	[CityID] [int] NOT NULL,
  CONSTRAINT [PK_Department] PRIMARY KEY CLUSTERED 
@@ -139,32 +145,37 @@ CREATE TABLE [dbo].[Department](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Dependent]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[Dependent]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Dependent](
+	[DepID] [int] IDENTITY(1,1) NOT NULL,
 	[DepName] [nvarchar](50) NULL,
-	[DepGender] [char](1) NULL,
+	[DepGender] [char](1) check(DepGender = 'M' or DepGender = 'F')NULL,
 	[DepBirthDate] [date] NULL,
-	[EmpID] [int] NULL
+	[EmpID] [int] NULL,
+ CONSTRAINT [PK_Dependent] PRIMARY KEY CLUSTERED 
+(
+	[DepID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Employees]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[Employees]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Employees](
-	[EmpID] [int] NOT NULL,
+	[EmpID] [int] IDENTITY(1,1) NOT NULL,
 	[EmpName] [nvarchar](50) NOT NULL,
 	[EmpAddress] [nvarchar](50) NOT NULL,
-	[EmpBirthDate] [date] NOT NULL,
-	[Facility] [nvarchar](50) NOT NULL,
+	[EmpBirthDate] [date] check (Year(getdate()) - year(empbirthdate) between 18 and 65)NOT NULL,
+	[Facility] [nvarchar](50) check (Facility like '%University%')NOT NULL,
 	[Major] [nvarchar](50) NOT NULL,
 	[Rank] [nvarchar](50) NOT NULL,
-	[EmpPhone] [int] NOT NULL,
+	[EmpPhone] [char](10) unique NOT NULL,
 	[DeptID] [int] NOT NULL,
 	[PositionID] [int] NOT NULL,
  CONSTRAINT [PK_Employees] PRIMARY KEY CLUSTERED 
@@ -173,15 +184,15 @@ CREATE TABLE [dbo].[Employees](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Insurance]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[Insurance]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Insurance](
-	[InsID] [int] NOT NULL,
+	[InsID] [int] IDENTITY(1,1) NOT NULL,
 	[InsAuthority] [nvarchar](50) NOT NULL,
-	[InsStartDate] [date] NOT NULL,
+	[InsStartDate] [date] check (year(Insstartdate)- (select year(Empbirthdate) from employees e where e.empID = empID) < 0) NOT NULL,
 	[InsClinic] [nvarchar](50) NOT NULL,
 	[EmpID] [int] NOT NULL,
  CONSTRAINT [PK_Insurance] PRIMARY KEY CLUSTERED 
@@ -190,27 +201,28 @@ CREATE TABLE [dbo].[Insurance](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Participate]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[Participate]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Participate](
+	[PartID] [int] IDENTITY(1,1) NOT NULL,
 	[DeptID] [int] NULL,
 	[ProjectID] [int] NOT NULL,
-	[DepStartDate] [date] NOT NULL,
-	[DepEndDate] [date] NOT NULL
+	[PartStartDate] [date] NOT NULL,
+	[PartEndDate] [date] check (datediff(day, partenddate,partstartdate) > 0) NOT NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Position]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[Position]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Position](
-	[PositionID] [int] NOT NULL,
+	[PositionID] [int] IDENTITY(1,1) NOT NULL,
 	[PositionName] [nvarchar](50) NOT NULL,
-	[SalaryRate] [float] NOT NULL,
+	[SalaryRate] [float] check(SalaryRate between 1 and 8) NOT NULL,
 	[NumbAbsent] [int] NOT NULL,
  CONSTRAINT [PK_Position] PRIMARY KEY CLUSTERED 
 (
@@ -218,13 +230,13 @@ CREATE TABLE [dbo].[Position](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Project]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[Project]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Project](
-	[ProjectID] [int] NOT NULL,
+	[ProjectID] [int] IDENTITY(1,1) NOT NULL,
 	[ProjectName] [nvarchar](50) NOT NULL,
 	[Budget] [float] NOT NULL,
  CONSTRAINT [PK_Project] PRIMARY KEY CLUSTERED 
@@ -233,16 +245,20 @@ CREATE TABLE [dbo].[Project](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Salary]    Script Date: 01-Nov-23 7:44:14 AM ******/
+/****** Object:  Table [dbo].[Salary]    Script Date: 01-Nov-23 9:53:00 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Salary](
-	[SalaryBasic] [float] NOT NULL,
-	[EmpID] [int] NOT NULL,
+	[SalaryID] [int] IDENTITY(1,1) NOT NULL,
+	[SalaryBasic] [float] default '500' NOT NULL,
 	[PositionID] [int] NOT NULL,
-	[AttReceiveDate] [date] NOT NULL
+	[AttID] [int] NOT NULL,
+ CONSTRAINT [PK_Salary] PRIMARY KEY CLUSTERED 
+(
+	[SalaryID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Attendance]  WITH CHECK ADD  CONSTRAINT [FK_Attendance_Employees] FOREIGN KEY([EmpID])
@@ -300,8 +316,8 @@ REFERENCES [dbo].[Project] ([ProjectID])
 GO
 ALTER TABLE [dbo].[Participate] CHECK CONSTRAINT [FK_Participate_Project]
 GO
-ALTER TABLE [dbo].[Salary]  WITH CHECK ADD  CONSTRAINT [FK_Salary_Attendance] FOREIGN KEY([EmpID])
-REFERENCES [dbo].[Attendance] ([EmpID])
+ALTER TABLE [dbo].[Salary]  WITH CHECK ADD  CONSTRAINT [FK_Salary_Attendance] FOREIGN KEY([AttID])
+REFERENCES [dbo].[Attendance] ([AttID])
 GO
 ALTER TABLE [dbo].[Salary] CHECK CONSTRAINT [FK_Salary_Attendance]
 GO
