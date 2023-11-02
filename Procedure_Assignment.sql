@@ -74,3 +74,23 @@ where year(getdate())-year(e.EmpBirthDate) > @age
 group by c.CityName
 
 exec checkAgeOverCities 30
+
+--7 Change Salary Basic
+create procedure changeBasicSalary
+@salary int = 500
+as
+update Salary
+set SalaryBasic = @salary
+
+
+exec changeBasicSalary 1000
+
+--8 Change Bonus Basic
+
+create procedure changeBasicBonus
+@bonus int = 20
+as
+update Attendance
+set BonusBasic = @bonus
+
+exec changeBasicBonus 50
