@@ -88,9 +88,9 @@ exec changeBasicSalary 1000
 --8 Change Bonus Basic
 
 create procedure changeBasicBonus
-@bonus int = 20
+@bonus int = 100
 as
 update Attendance
 set BonusBasic = @bonus
 
-exec changeBasicBonus 50
+exec changeBasicBonus 200
