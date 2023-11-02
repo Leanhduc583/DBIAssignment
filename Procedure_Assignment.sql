@@ -12,7 +12,19 @@ group by d.DeptName
 
 exec checkDepartmentCountEmployee 4
 
---2 Check overall absenteeism of an employee
+--2 Count total number of projects that a department is participating
+create procedure checkDepartmentCountProject
+@ID int
+as
+select d.DeptName, count(p.ProjectID) 'Number of Projects'
+from Department d
+join Participate p on p.DeptID = d.DeptID
+where d.DeptID = @ID
+group by d.DeptName
+
+exec checkDepartmentCountProject 2
+
+--3 Check overall absenteeism of an employee
 create procedure checkAbsentDay 
 @empID int 
 as
@@ -24,7 +36,7 @@ group by e.EmpID, e.EmpName
 
 exec checkAbsentDay 14
 
---3 Check the dependents of an employee
+--4 Check the dependents of an employee
 create procedure checkDependent
 @empID int
 as
@@ -35,7 +47,7 @@ where d.EmpID = @empID
 
 exec checkDependent 17
 
---4 Check Department and City of a Project
+--5 Check Department and City of a Project
 create procedure checkProject
 @ID int
 as
@@ -48,7 +60,7 @@ where pj.ProjectID = @ID
 
 exec checkProject 4
 
---5 Check number of employee participate in a project
+--6 Check number of employee participate in a project
 create procedure checkProjectCountEmployee
 @ID int
 as
@@ -62,7 +74,7 @@ group by pj.ProjectName
 
 exec checkProjectCountEmployee 5
 
---6 Show City Name, count of employees of citites that consists of employees who are over X years old
+--7 Show City Name, count of employees of citites that consists of employees who are over X years old
 create procedure checkAgeOverCities
 @age int
 as
@@ -75,7 +87,7 @@ group by c.CityName
 
 exec checkAgeOverCities 30
 
---7 Change Salary Basic
+--8 Change Salary Basic
 create procedure changeBasicSalary
 @salary int = 500
 as
@@ -85,7 +97,7 @@ set SalaryBasic = @salary
 
 exec changeBasicSalary 1000
 
---8 Change Bonus Basic
+--9 Change Bonus Basic
 
 create procedure changeBasicBonus
 @bonus int = 100
